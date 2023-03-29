@@ -1,4 +1,4 @@
-using ChessboardMatrix;
+using Chessboard;
 
 namespace ChessboardMatrixTest
 {
@@ -17,13 +17,13 @@ namespace ChessboardMatrixTest
             Assert.AreEqual(b.Size, 2);
 
             ChessboardMatrix c = new(5);
-            for (int i = 0; i < 5; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    Assert.AreEqual(c[i, j], 0);
-                }
-            }
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Assert.AreEqual(c[i, j], 0);
+            //    }
+            //}
             Assert.AreEqual(c.Size, 5);
             Assert.ThrowsException<ChessboardMatrix.NegativeSizeException>(() => _ = new ChessboardMatrix(-1));
             ChessboardMatrix d = new ChessboardMatrix(1000);

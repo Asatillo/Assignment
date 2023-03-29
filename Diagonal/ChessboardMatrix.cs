@@ -17,8 +17,8 @@ namespace Chessboard
         #endregion
 
         #region Attribute
-        private List<int> x = new ();
-        private int size;
+        private List<double> x = new ();
+        private readonly int size;
         #endregion
 
         #region Constructors
@@ -28,11 +28,7 @@ namespace Chessboard
             size = k;
             if (k <= 0) throw new NegativeSizeException();
             for(int i=0; i<k; i++){
-                for(int j=0; j<k; j++){
-                    if((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)){
-                        x.add(0);
-                    }
-                }
+                        x.Add(0);
             }
         }
 
@@ -59,13 +55,13 @@ namespace Chessboard
             get
             {
                 if (i < 0 || i >= Size || j < 0 || j >= Size) throw new IndexOutOfRangeException();
-                if ((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)) return x[((i-1)*Size+(j-1))/2];
+                if ((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)) return x[(i*Size+j)/2];
                 else return 0;
             }
             set
             {
                 if (i < 0 || i >= Size || j < 0 || j >= Size) throw new IndexOutOfRangeException();
-                if ((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)) x[((i-1)*Size+(j-1))/2] = value;
+                if ((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)) x[(i*Size+j)/2] = (int)value;
                 else throw new ReferenceToNullPartException();
             }
         }
@@ -73,7 +69,10 @@ namespace Chessboard
         #endregion
 
         #region Getters and setters
-
+        public override int GetHashCode()
+        {
+            return (base.GetHashCode() << 2);
+        }
         public override string ToString()
         {
             string str = "";
@@ -92,12 +91,36 @@ namespace Chessboard
             return str;
         }
 
-        public int Get(int i, int j){
+        public double Get(int i, int j){
             if(i > size || j > size) throw new DifferentSizeException();
             if((i%2 != 0 && j%2!=0) || (i%2 == 0 && j%2==0)) return 0;
             return x[((i-1)*Size+(j-1))/2];
         }
 
+        public void Set(in List<double> x)
+        {
+            if (this.Size != x.Count) throw new DifferentSizeException();
+            for (int i = 0; i < Size; i++)
+            {
+                this.x[i] = x[i];
+            }
+        }
+
+        public override bool Equals(Object? obj)
+        {
+            if (obj == null || obj is not ChessboardMatrix)
+                return false;
+            else
+            {
+                ChessboardMatrix? chessboard = obj as ChessboardMatrix;
+                if (chessboard!.Size != this.Size) return false;
+                for (int i = 0; i < x.Count; i++)
+                {
+                    if (x[i] != chessboard.x[i]) return false;
+                }
+                return true;
+            }
+        }
         #endregion
 
         #region Operators

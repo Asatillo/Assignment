@@ -1,0 +1,15 @@
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.csproj.AssemblyReference.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.AssemblyInfoInputs.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.AssemblyInfo.cs
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.csproj.CoreCompileInputs.cache
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\Diagonal.exe
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\Diagonal.deps.json
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\Diagonal.runtimeconfig.json
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\Diagonal.dll
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\Diagonal.pdb
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.dll
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\refint\Diagonal.dll
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.pdb
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\Diagonal.genruntimeconfig.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ref\Diagonal.dll

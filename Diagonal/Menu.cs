@@ -1,4 +1,5 @@
 ﻿using System;
+using Chessboard;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -183,10 +184,10 @@ namespace Matrix
                     Console.WriteLine("Positive integer is expected!");
                 }
             } while (!ok);
-            ChessboardMatrix d = new ChessboardMatrix(n);
+            ChessboardMatrix d = new(n);
 
             ok = true;
-            List<double> elements = new List<double>();
+            List<double> elements = new();
             for (int i = 0; i < n;i++)
             {
                 Console.Write("Element: ");
