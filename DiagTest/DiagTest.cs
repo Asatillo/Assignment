@@ -17,13 +17,13 @@ namespace ChessboardMatrixTest
             Assert.AreEqual(b.Size, 2);
 
             ChessboardMatrix c = new(5);
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    for (int j = 0; j < 3; j++)
-            //    {
-            //        Assert.AreEqual(c[i, j], 0);
-            //    }
-            //}
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Assert.AreEqual(c[i, j], 0);
+                }
+            }
             Assert.AreEqual(c.Size, 5);
             Assert.ThrowsException<ChessboardMatrix.NegativeSizeException>(() => _ = new ChessboardMatrix(-1));
             ChessboardMatrix d = new ChessboardMatrix(1000);
@@ -33,12 +33,19 @@ namespace ChessboardMatrixTest
         [TestMethod]
         public void Change()
         {
+            
             ChessboardMatrix c = new(3);
             c[0, 0] = 1;
+            c[0, 2] = 1;
             c[1, 1] = 1;
+            c[2, 0] = 1;
             c[2, 2] = 1;
 
-            for (int i = 0; i < 3; i++)
+            // This should make the chessboard look like this
+            //1 0 1
+            //0 1 0
+            //1 0 1
+            for (int i = 0; i < c.Length; i++)
             {
                 Assert.AreEqual(c[i, i], 1);
             }
@@ -110,7 +117,7 @@ namespace ChessboardMatrixTest
             ChessboardMatrix c;
 
             a[0, 0] = 1;
-            a[1, 1] = 1;
+            a[0, 1] = 1;
             a[2, 2] = 1;
 
             b[0, 0] = 42;
