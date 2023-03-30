@@ -1,0 +1,15 @@
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\ChessboardMatrix.exe
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\ChessboardMatrix.deps.json
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\ChessboardMatrix.runtimeconfig.json
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\ChessboardMatrix.dll
+C:\Users\arday\Assat\Diagonal\bin\Debug\net6.0\ChessboardMatrix.pdb
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.csproj.AssemblyReference.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.AssemblyInfoInputs.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.AssemblyInfo.cs
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.csproj.CoreCompileInputs.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.dll
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\refint\ChessboardMatrix.dll
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.pdb
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ChessboardMatrix.genruntimeconfig.cache
+C:\Users\arday\Assat\Diagonal\obj\Debug\net6.0\ref\ChessboardMatrix.dll

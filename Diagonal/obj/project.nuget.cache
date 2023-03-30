@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FMCCLvWO1nmuu1wg2OsbfYXrbIWFk4dxH1ca5VcbloG4uy6oSBs7r1qvAwKONTUndhlS0dVEgGTSJcgoW2sdgA==",
+  "dgSpecHash": "lID6T4cBwOzY+0eBz4FubxbfYP9LJHpzvAMF/5mhInfHy4d75k3Y+Vwaopll0wNynYXNLO/7U00LCbTUsmqA0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arday\\Assat\\Diagonal\\Diagonal.csproj",
+  "projectFilePath": "C:\\Users\\arday\\Assat\\Diagonal\\ChessboardMatrix.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

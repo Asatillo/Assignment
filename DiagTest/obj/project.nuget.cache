@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Iv//zlT6HKqZYbP7XoqsDZXyvCNPvX61T5OcvJZmxlpAmQH54GYMRN9mvDFp/CqUZ9jn7ccwzjE/aTMKoQGGg==",
+  "dgSpecHash": "O4xUWaDZ+tpq8SdWFHVdne22gl1izWiDGIySmpcYU8ZNFidoMfXXexLexiNnL/kJqQLUrGNBbQIRctaO0A1e6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arday\\Assat\\DiagTest\\TestDiag.csproj",
+  "projectFilePath": "C:\\Users\\arday\\Assat\\DiagTest\\TestChessboardMatrix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arday\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\arday\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

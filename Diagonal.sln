@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagonal", "Diagonal\Diagonal.csproj", "{4B95B5CA-2513-42B8-AF1B-9824B973B8C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChessboardMatrix", "Diagonal\ChessboardMatrix.csproj", "{4B95B5CA-2513-42B8-AF1B-9824B973B8C4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDiag", "DiagTest\TestDiag.csproj", "{AD81E3E6-3F01-4BC4-86E5-0D2AED336E1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestChessboardMatrix", "DiagTest\TestChessboardMatrix.csproj", "{AD81E3E6-3F01-4BC4-86E5-0D2AED336E1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

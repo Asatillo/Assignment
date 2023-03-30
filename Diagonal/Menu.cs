@@ -190,18 +190,25 @@ namespace Matrix
             List<double> elements = new();
             for (int i = 0; i < n;i++)
             {
-                Console.Write("Element: ");
-                try
-                {
-                    double elem = double.Parse(Console.ReadLine()!);
-                    elements.Add(elem);
+                for(int j = 0; j < n;j++) {
+                    if(ChessboardMatrix.IsColored(i, j))
+                    {
+                        Console.Write("Element: ");
+                        try
+                        {
+                            double elem = double.Parse(Console.ReadLine()!);
+                            elements.Add(elem);
+                        }
+                        catch (System.FormatException)
+                        {
+                            Console.WriteLine("Number is expected!");
+                            ok = false;
+                            break;
+                        }
+                    }
+                    
                 }
-                catch (System.FormatException)
-                {
-                    Console.WriteLine("Number is expected!");
-                    ok = false;
-                    break;
-                }
+                
             }
 
             if (ok)

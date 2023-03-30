@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arday\\Assat\\Diagonal\\Diagonal.csproj",
-      "projectName": "Diagonal",
-      "projectPath": "C:\\Users\\arday\\Assat\\Diagonal\\Diagonal.csproj",
+      "projectUniqueName": "C:\\Users\\arday\\Assat\\Diagonal\\ChessboardMatrix.csproj",
+      "projectName": "ChessboardMatrix",
+      "projectPath": "C:\\Users\\arday\\Assat\\Diagonal\\ChessboardMatrix.csproj",
       "packagesPath": "C:\\Users\\arday\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\arday\\Assat\\Diagonal\\obj\\",
       "projectStyle": "PackageReference",

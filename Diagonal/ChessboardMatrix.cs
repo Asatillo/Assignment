@@ -107,8 +107,8 @@ namespace Chessboard
 
         public void Set(in List<double> x)
         {
-            if (this.Size != x.Count) throw new DifferentSizeException();
-            for (int i = 0; i < Size; i++)
+            if (this.Length != x.Count) throw new DifferentSizeException();
+            for (int i = 0; i < length; i++)
             {
                 this.x[i] = x[i];
             }
@@ -154,9 +154,7 @@ namespace Chessboard
 
         #region Helpers
 
-        private static bool IsColored(int i, int j){
-            return (i % 2 == 0 && j % 2 == 0) || (i % 2 != 0 && j % 2 != 0);
-        }
+        public static bool IsColored(int i, int j) => (i % 2 == 0 && j % 2 == 0) || (i % 2 != 0 && j % 2 != 0);
 
         #endregion
     }

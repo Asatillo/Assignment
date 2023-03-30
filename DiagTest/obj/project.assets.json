@@ -1902,14 +1902,14 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Diagonal/1.0.0": {
+      "ChessboardMatrix/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Diagonal.dll": {}
+          "bin/placeholder/ChessboardMatrix.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Diagonal.dll": {}
+          "bin/placeholder/ChessboardMatrix.dll": {}
         }
       }
     }
@@ -6772,15 +6772,15 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
-    "Diagonal/1.0.0": {
+    "ChessboardMatrix/1.0.0": {
       "type": "project",
-      "path": "../Diagonal/Diagonal.csproj",
-      "msbuildProject": "../Diagonal/Diagonal.csproj"
+      "path": "../Diagonal/ChessboardMatrix.csproj",
+      "msbuildProject": "../Diagonal/ChessboardMatrix.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Diagonal >= 1.0.0",
+      "ChessboardMatrix >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
@@ -6793,9 +6793,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arday\\Assat\\DiagTest\\TestDiag.csproj",
-      "projectName": "TestDiag",
-      "projectPath": "C:\\Users\\arday\\Assat\\DiagTest\\TestDiag.csproj",
+      "projectUniqueName": "C:\\Users\\arday\\Assat\\DiagTest\\TestChessboardMatrix.csproj",
+      "projectName": "TestChessboardMatrix",
+      "projectPath": "C:\\Users\\arday\\Assat\\DiagTest\\TestChessboardMatrix.csproj",
       "packagesPath": "C:\\Users\\arday\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\arday\\Assat\\DiagTest\\obj\\",
       "projectStyle": "PackageReference",
@@ -6814,8 +6814,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\arday\\Assat\\Diagonal\\Diagonal.csproj": {
-              "projectPath": "C:\\Users\\arday\\Assat\\Diagonal\\Diagonal.csproj"
+            "C:\\Users\\arday\\Assat\\Diagonal\\ChessboardMatrix.csproj": {
+              "projectPath": "C:\\Users\\arday\\Assat\\Diagonal\\ChessboardMatrix.csproj"
             }
           }
         }
