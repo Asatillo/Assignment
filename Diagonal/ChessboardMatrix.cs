@@ -28,11 +28,16 @@ namespace Chessboard
             size = k;
             if (k <= 0) throw new NegativeSizeException();
             for(int i=0; i<k; i++){
+                for(int j=0; j<k; j++){
+                    if (isColored(i, j)){
                         x.Add(0);
+                    }  
+                }
             }
         }
 
         public ChessboardMatrix(ChessboardMatrix d){
+            size = d.Size;
             for (int i = 0; i < d.x.Count; ++i)
             {
                 x.Add(d.x[i]);
@@ -55,13 +60,13 @@ namespace Chessboard
             get
             {
                 if (i < 0 || i >= Size || j < 0 || j >= Size) throw new IndexOutOfRangeException();
-                if ((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)) return x[(i*Size+j)/2];
+                if (isColored(i, j)) return x[(i*Size+j)/2];
                 else return 0;
             }
             set
             {
                 if (i < 0 || i >= Size || j < 0 || j >= Size) throw new IndexOutOfRangeException();
-                if ((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)) x[(i*Size+j)/2] = (int)value;
+                if (isColored(i, j)) x[(i*Size+j)/2] = value;
                 else throw new ReferenceToNullPartException();
             }
         }
@@ -80,7 +85,7 @@ namespace Chessboard
             {
                 for (int j = 0; j < Size; ++j)
                 {
-                    if((i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)){
+                    if(isColored(i, j)){
                         str += "\t" + this[i, j];    
                     }else{
                         str += "\tx";
@@ -89,12 +94,6 @@ namespace Chessboard
                 str += "\n";
             }
             return str;
-        }
-
-        public double Get(int i, int j){
-            if(i > size || j > size) throw new DifferentSizeException();
-            if((i%2 != 0 && j%2!=0) || (i%2 == 0 && j%2==0)) return 0;
-            return x[((i-1)*Size+(j-1))/2];
         }
 
         public void Set(in List<double> x)
@@ -128,7 +127,7 @@ namespace Chessboard
         public static ChessboardMatrix operator +(ChessboardMatrix a, ChessboardMatrix b){
             if (a.Size != b.Size) throw new DifferentSizeException();
             ChessboardMatrix c = new(a.Size);
-            for (int i = 0; i < c.Size; ++i){
+            for (int i = 0; i < c.d.Count; ++i){
                 c.x[i] = a.x[i] + b.x[i];
             }
             return c;
@@ -137,11 +136,19 @@ namespace Chessboard
         public static ChessboardMatrix operator *(ChessboardMatrix a, ChessboardMatrix b){
             if (a.Size != b.Size) throw new DifferentSizeException();
             ChessboardMatrix c = new(a.Size);
-            for (int i = 0; i < c.Size; ++i){
+            for (int i = 0; i < c.d.Count; ++i){
                 c.x[i] = a.x[i] * b.x[i];
             }
             return c;
         }
+        #endregion
+
+        #region Helpers
+
+        private static bool isColored(int i, int j){
+            return (i%2 == 0 && j%2==0) || (i%2 != 0 && j%2!=0)
+        }
+
         #endregion
     }
 }
